@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Team | GFG - TCET</title>
+    <link rel="shortcut icon " type="images/x-icon" href="Images/gfg-gg-logo.svg">
+</head>
+
+<body>
+    <section> <!--Nav Section-->
+    <!-- Navbar goes here -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4"> <!-- max-w-7xl to perfectly fit it in the display form left side and right side-->
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="home.html" class="flex items-center py-4 px-2">
+                            <img src="Images/gfg-gg-logo.svg" alt="Logo" class="h-10 w-10 mr-2">
+                            <span class="font-sans text-black text-2xl">GeeksforGeeks</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navbar items -->
+                <div class="hidden md:flex items-center space-x-3 font-sans text-xl">
+                    <a href="home.html" class="py-2 px-2 text-black rounded-lg hover:bg-green-500 hover:text-white transition duration-300">Home</a>
+                    <a href="event.html" class="py-2 px-2 text-black rounded-lg hover:bg-green-500 hover:text-white transition duration-300">Events</a>
+                    <a href="team.html" class="py-2 px-2 text-white bg-green-500 hover:bg-green-400 transition duration-300 rounded-lg">Team</a>
+                    <a href="contact.html" class="py-2 px-2 text-black rounded-lg hover:bg-green-500 hover:text-white transition duration-300">Contact Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="text-lg px-2 mx-0 py-2">
+                <li><a href="home.html" class="block  text-black hover:bg-green-500 transition duration-300">Home</a></li>
+                <li><a href="event.html" class="block text-black hover:bg-green-500 transition duration-300">Events</a></li>
+                <li class="active"><a href="team.html" class="block text-white bg-green-500 font-semibold">Team</a></li>
+                <li><a href="contact.html" class="block text-black hover:bg-green-500 transition duration-300">Contact Us</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+    </section>
+    <!-- <h1 class="text-green-500 text-2xl md:text-3xl lg:text-4xl font-bold p-4">Geeks For Gekks</h1> -->
+    <!-- <hr><hr> -->
+
+    
+    <section class="text-gray-800 body-font" id="team">
+        <div class="container px-5 py-14 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-black">Meet the Team</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Every member of the society has always been driven and committed to achieving their goals, fostering a healthy workplace culture. Our mutual support and desire to assist one another in any way possible is what makes GFG-TCET a "Team". Take a look at our diverse team of innovative thinkers that want to make a difference. Here we goo!!</p>
+          </div>
+
+          <div class="flex flex-wrap md:px-52 px-2">
+
+            <div class="p-4 lg:w-1/2 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center rounded-full">
+                <img alt="team" class="flex-shrink-0 rounded-full w-80 h-80 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Harsh Jha 1.jpg">
+                <div class="w-80">
+                  <h2 class="title-font font-medium text-lg text-black">Harsh Jha</h2>
+                  <h3 class="text-gray-800 mb-3">Chairperson</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/2 md:w-1/2 rounded-3xl hover:shadow-xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-80 h-80 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Khushi Gupta 1.jpg">
+                <div class="w-80">
+                  <h2 class="title-font font-medium text-lg text-black">Khushi Gupta</h2>
+                  <h3 class="text-gray-800 mb-3">Vice Chairperson</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="flex flex-wrap px-10">
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center ">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/ankit.jpg">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Ankit Maurya</h2>
+                  <h3 class="text-gray-800 mb-3">Tech Head</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Eshan Karla.jpg">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Eshan Kalra</h2>
+                  <h3 class="text-gray-800 mb-3">Marketing Head</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Vishal Rawat.jpg">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Vishal Rawat</h2>
+                  <h3 class="text-gray-800 mb-3">Event Head</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center ">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Anshu1.jpeg">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Anshu Pandey</h2>
+                  <h3 class="text-gray-800 mb-3">Vice-Tech Head</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-sm:hidden  p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 w-60 h-60 object-cover object-center mb-4" src="Images/gfg tcet logo.jpg">
+                <div class="w-60">
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Sandeep Yadav.png">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Sandeep Yadav</h2>
+                  <h3 class="text-gray-800 mb-3">Vice-Event Head</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center ">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Vedika Mandre.jpg">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Vedika Mandre</h2>
+                  <h3 class="text-gray-800 mb-3">PR & Outreach Head</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Khushii Nikhade 2.jpg">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Khushii Nikhade</h2>
+                  <h3 class="text-gray-800 mb-3">Social Media Head</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 hover:shadow-xl rounded-3xl hover:shadow-green-300 hover:bg-green-50">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-60 h-60 object-cover object-center mb-4 shadow-xl shadow-green-300" src="Images/core photos/Swayam Sharma 1.jpg">
+                <div class="w-60">
+                  <h2 class="title-font font-medium text-lg text-black">Swayam Sharma</h2>
+                  <h3 class="text-gray-800 mb-3">Design & Branding Head</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+      <br><br>
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 pb-10 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">Working Committee</h1>
+          </div>
+
+          <div class="flex flex-wrap md:px-36 px-16">
+
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 w-48 h-48 object-cover object-center mb-4 rounded-full shadow-lg shadow-green-300" src="Images/Wc/mjay.jpg">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Mrutunjay Pandit</h2>
+                  <h3 class="text-gray-500 mb-3">Inhouse & Logistics</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2 shadow-[0_0_0_0_rgba(0,0,0,0.3)]">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center mb-4 shadow-lg shadow-green-300" src="Images/Wc/diya.jpg">
+                <div class="w-48">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Diya Vora</h2>
+                  <h3 class="text-gray-500 mb-3">Tech Team</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/3 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center mb-4 shadow-lg shadow-green-300" src="Images/Wc/dheerav.jpg">
+                <div class="w-48">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Dheerav Nahar</h2>
+                  <h3 class="text-gray-500 mb-3">PR & Marketing Team</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex flex-wrap px-16 pt-14">
+
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center mb-4 shadow-lg shadow-green-300" src="Images/Wc/prasad.jpg">
+                <div class="w-48">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Prasad Jadhav</h2>
+                  <h3 class="text-gray-500 mb-3">Creatives Team</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center mb-4 shadow-lg shadow-green-300" src="Images/Wc/parth.jpg">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Parth Singh</h2>
+                  <h3 class="text-gray-500 mb-3">Tech Team</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center mb-4 shadow-lg shadow-green-300" src="Images/Wc/yash.jpg">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Yash Save</h2>
+                  <h3 class="text-gray-500 mb-3">PR & Marketing Team</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/4 md:w-1/2">
+              <div class="h-full flex flex-col items-center text-center">
+                <img alt="team" class="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center mb-4 shadow-lg shadow-green-300" src="Images/Wc/blank.webp">
+                <div class="w-full">
+                  <h2 class="title-font font-medium text-lg text-gray-900">Abhilash Tripathi</h2>
+                  <h3 class="text-gray-500 mb-3">Creatives Team</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <hr>
+
+  <footer class="text-gray-600 body-font bg-white">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-black">
+        <span class="ml-3 text-xl">GFG-TCET</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 — GFG-TCET 
+        <a href="https://www.linkedin.com/in/anshupandey1/" class="text-gray-500 ml-1 pl-1" rel="noopener noreferrer" target="_blank">@Anshu</a>
+        <a href="https://www.linkedin.com/in/ankit-maurya-01126a211/" class="text-gray-500 ml-1 " rel="noopener noreferrer" target="_blank">@Ankit</a>
+        <a href="https://www.linkedin.com/in/harshjha02/" class="text-gray-500 ml-1 " rel="noopener noreferrer" target="_blank">@Harsh</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-400" href="https://www.facebook.com/people/GFG-TCET/100086922317277/">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400" href="https://twitter.com/GFG_TCET">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400" href="https://www.instagram.com/gfg_tcet/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400" href="https://www.linkedin.com/company/gfg-tcet/">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+
+</body>
+</html>
