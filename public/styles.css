@@ -19,6 +19,66 @@
   --tw-content: '';
 }
 
+.tooltip-container {
+  position: fixed;
+  top: 78%;
+  right: 2%;
+  display: flex;
+  place-content: center;
+}
+
+p#tooltip-text {
+  display: none;
+  position: absolute;
+  top:-80%;
+  z-index: 1;
+  background: #2ca153;
+  padding: 13%;
+  font-size: 90.5%;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  animation: fadeIn 1s;
+}
+
+p#tooltip-text:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15%;
+  border: 8px solid transparent;
+  border-top: 8px solid #2ca153;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.image-size {
+  /* margin-top: 5px; */
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+#tooltip-button {
+  border-radius: 60px;
+  height: 60px;
+  width: 60px;
+  border: 2px solid black;
+}
+
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
